@@ -1,9 +1,11 @@
 //Styles Pages
-
+@import './pages/Home/home.scss';
+@import './pages/About/about.scss';
 
 
 //Styles Composants
 @import './components/Header/header.scss';
+@import './components/Footer/footer.scss';
 
 //General settings
 body {

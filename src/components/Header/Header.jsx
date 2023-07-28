@@ -15,7 +15,7 @@ function Header() {
             <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-            <NavLink to="/">A propos</NavLink>
+            <NavLink to="/About">A propos</NavLink>
           </li>
         </ul>
       </nav>
