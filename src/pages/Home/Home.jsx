@@ -9,11 +9,11 @@ import './home.scss'
 function Home() {
   return (
     <div>
-      <div className='mise-en-page'>
       <Header />
-      <Banner imgSrc={ImgBanner1} textEnable={true}/>
-      <Gallery />
-      </div>
+      <main>
+        <Banner imgSrc={ImgBanner1} textEnable={true}/>
+        <Gallery />
+      </main>
       <Footer />
     </div>
   )
