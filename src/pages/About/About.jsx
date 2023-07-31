@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../../components/Header/Header'
+import './about.scss'
 
 function About() {
   return (
-    <div>A propos de nous, toi moi et lui</div>
+    <div>
+      <Header />
+      <p>A propos de nous, toi moi et lui</p>
+    </div>
   )
 }
 

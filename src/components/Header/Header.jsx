@@ -6,7 +6,7 @@ import './header.scss';
 
 function Header() {
   return (
-    <header className='header'>
+    <header>
       <div className='logo-container'>
         <img src={Logo} alt=''></img>
       </div>
