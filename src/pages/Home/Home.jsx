@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
-import Gallery from '../../components/Gallerie/Gallerie'
+import Card from '../../components/Card/Card'
+import data from '../../datas/logements.json'
 import Footer from '../../components/Footer/Footer'
 import ImgBanner1 from '../../assets/images/img-banner-1.jpeg'
 import './home.scss'
+
 
 function Home() {
   return (
@@ -12,9 +14,18 @@ function Home() {
       <Header />
       <main>
         <Banner imgSrc={ImgBanner1} textEnable={true}/>
-        <Gallery />
+        <section className='gallerie-style'>
+            {data.map((logement) => (
+                <Card
+                    key={logement.id}
+                    id={logement.id}
+                    cover={logement.cover}
+                    title={logement.title} 
+                />
+            ))}
+        </section>
       </main>
-      <Footer />
+      <Footer ><p>Hello children</p></Footer>
     </div>
   )
 }

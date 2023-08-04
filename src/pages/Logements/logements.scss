@@ -1,0 +1,27 @@
+.dropdown-section{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .collapse-container{
+        width: 45%;
+        height: fit-content
+    }
+    .collapse-content{
+        width: 100%;
+    }
+}
+
+.section-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .right-container{
+        .host{
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
