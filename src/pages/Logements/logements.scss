@@ -1,5 +1,4 @@
 .dropdown-section{
-    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     .collapse-container{
@@ -16,12 +15,31 @@
     display: flex;
     justify-content: space-between;
     .right-container{
+        width: fit-content;
         .host{
-            img{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            min-width: fit-content;
+            gap :10px;
+            .host-img{
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
             }
+            span{
+                color: #FF6060;
+                font-size: 18px;
+                text-align: right;
+                width: 50%;
+            }
         }
     }
+    .left-container{
+        width: fit-content;
+        color: #FF6060;
+    }
+}
+footer{
+    margin-top:50px;
 }

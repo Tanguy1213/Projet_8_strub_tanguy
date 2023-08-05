@@ -1,0 +1,10 @@
+.star-rating {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: end;
+    img {
+      width: 30px;
+      height: 30px; 
+    }
+  }

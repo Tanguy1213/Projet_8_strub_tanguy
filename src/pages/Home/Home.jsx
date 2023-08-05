@@ -25,7 +25,7 @@ function Home() {
             ))}
         </section>
       </main>
-      <Footer ><p>Hello children</p></Footer>
+      <Footer />
     </div>
   )
 }

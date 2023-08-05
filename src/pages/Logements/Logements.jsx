@@ -6,6 +6,7 @@ import '../Logements/logements.scss'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Slider from '../../components/Slider/Slider'
+import StarRating from '../../components/StarRating/StarRating';
 
 function Logements() {
   const { id } = useParams();
@@ -15,7 +16,7 @@ function Logements() {
     <div>
       <Header />
       <main>
-      <Slider />
+      <Slider images={selectedLogement.pictures} />
       <section className='section-container'>
         <div className='left-container'>
           <h2>{selectedLogement.title}</h2>
@@ -25,8 +26,9 @@ function Logements() {
         <div className='right-container'>
           <div className='host'>
             <span className='host-name'>{selectedLogement.host.name}</span>
-            <img src={selectedLogement.host.picture} alt={selectedLogement.host.name}/>
+            <img className='host-img'src={selectedLogement.host.picture} alt={selectedLogement.host.name}/>
           </div>
+          <StarRating rating={selectedLogement && selectedLogement.rating} />
         </div>
       </section>
       <section className='dropdown-section'>
