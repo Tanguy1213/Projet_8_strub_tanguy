@@ -8,6 +8,8 @@
     .collapse-content{
         width: 100%;
     }
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .section-container{
@@ -38,6 +40,31 @@
     .left-container{
         width: fit-content;
         color: #FF6060;
+        p{
+            margin-top: 0;
+            font-size: 18px;
+        }
+        h2{       
+            margin:0;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 142.6%;
+        }
     }
 }
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  
+    .tag-bubble {
+      background-color: #ff6060;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+  }
 

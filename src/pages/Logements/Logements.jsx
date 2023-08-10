@@ -21,7 +21,14 @@ function Logements() {
         <div className='left-container'>
           <h2>{selectedLogement.title}</h2>
           <p>{selectedLogement.location}</p>
-          <p>{selectedLogement.tags}</p>
+          <div className="tags-container">
+        {selectedLogement &&
+          selectedLogement.tags.map((tag, index) => (
+            <div key={index} className="tag-bubble">
+              {tag}
+            </div>
+          ))}
+      </div>
         </div>
         <div className='right-container'>
           <div className='host'>
