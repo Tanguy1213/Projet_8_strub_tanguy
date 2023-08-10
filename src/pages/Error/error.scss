@@ -1,0 +1,27 @@
+.notFound-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ff6060;
+  row-gap:130px;
+  margin-bottom: 100px;
+
+  h2 {
+    font-size: 288px;
+    margin: 0;
+  }
+  p {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+  }
+}

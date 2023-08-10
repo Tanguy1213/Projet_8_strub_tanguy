@@ -7,11 +7,11 @@ import './header.scss';
 function Header() {
   return (
     <header>
-      <div className='logo-container'>
-        <img src={Logo} alt=''></img>
-      </div>
+      
+        <img className='logo-style' src={Logo} alt=''></img>
+      
       <nav className='navigation'>
-        <ul className='navigation-lien-style'>
+        <ul>
           <li>
             <NavLink to="/">Accueil</NavLink>
           </li>

@@ -11,3 +11,12 @@
     row-gap:50px ;
     margin-bottom: 50px;
 }
+@media screen and (max-width:768px){
+    .gallerie-style{
+        background-color: transparent;
+        row-gap: 27px;
+        padding:0;
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
+}

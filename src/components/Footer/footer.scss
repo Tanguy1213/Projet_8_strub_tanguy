@@ -26,3 +26,16 @@ footer{
         line-height: 34px;
     }
 }
+
+@media screen and (max-width:768px){
+    footer{ 
+        div{
+            width: 122px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 2;
+            text-align: center;
+        }
+    }
+}

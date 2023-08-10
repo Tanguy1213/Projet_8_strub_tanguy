@@ -19,3 +19,18 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    header{
+    img{
+        width: 145px;
+        height: 46.881px;
+    }
+    ul{
+        gap:26px;
+        padding: 0;
+    a{
+        font-size: 12px;
+    }}
+}
+}

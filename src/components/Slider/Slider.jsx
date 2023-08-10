@@ -14,6 +14,20 @@ function Slider({ images }) {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
+  if (images.length === 0) {
+    return null;
+  }
+
+  if (images.length === 1) {
+    return (
+      <div className="slider-container">
+        <div className="image-container">
+          <img src={images[0]} alt="Slide 1" className="active" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="slider-container">
       <div className="image-container">
