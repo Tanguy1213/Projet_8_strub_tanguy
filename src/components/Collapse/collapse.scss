@@ -1,5 +1,5 @@
 .collapse-container {
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   height: fit-content;
   max-width: 1023px;
@@ -29,7 +29,7 @@
 
   .collapse-button {
     background-color: #ff6060;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -42,7 +42,8 @@
     z-index: 2;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     .arrow-icon {
-      font-size: 1.2rem;
+      width: 32px;
+      height: 100%;
       color: #fff;
       transform-origin: center;
     }
@@ -62,7 +63,7 @@
     font-weight: 400;
     line-height: 142.6%;
     background-color: #f6f6f6;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
     p {
       padding: 1.5rem 1rem 1rem 1rem;
       margin: 0;
@@ -71,6 +72,26 @@
       list-style: none;
       padding: 1.5rem 1rem 1rem 1rem;
       margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .collapse-button {
+      height: 30px;
+      .arrow-icon {
+        width: 24px;
+        height: 100%;
+      }
+      .button-text {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        color: #fff;
+      }
+    }
+    .collapse-content {
+      font-size: 12px;
     }
   }
 }
