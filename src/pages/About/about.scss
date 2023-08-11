@@ -1,6 +1,15 @@
 .collapse-list{
 display: flex;
 flex-direction: column;
+align-items: center;
 row-gap: 30px;
 margin-bottom: 36px;
+}
+
+@media screen and (max-width: 768px){
+    .section-banner{
+        img{
+            height: 223px;
+        }
+    }
 }

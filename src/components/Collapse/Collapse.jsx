@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import arrowIcon from '../../assets/arrow.svg';
-import './collapse.scss'; // Assurez-vous d'importer votre fichier SCSS
+import './collapse.scss';
 
 function Collapse({ children, buttonText }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,9 @@ function Collapse({ children, buttonText }) {
           className={`arrow-icon ${isOpen ? 'open' : ''}`}
         />
       </button>
-      {isOpen && <div className="collapse-content">{children}</div>}
+      <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
+          {children}
+      </div>
     </div>
   );
 }

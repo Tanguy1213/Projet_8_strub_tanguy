@@ -1,35 +1,29 @@
 .collapse-container {
-    background-color: #f6f6f6;
-    border-radius: 10px;
+  border-radius: 10px;
+  overflow:hidden;
+  height: fit-content;
+  max-width: 1023px;
   &.open {
     .arrow-icon {
       transform: rotate(-180deg);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.4s ease-in-out;
     }
-
     .collapse-content {
-      overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
       max-height: 1000px;
+      transition: transform 0.4s ease-in-out;
+      transform: translateY(-7%);
       width: auto;
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
     }
   }
-
   &.closed {
     .arrow-icon {
       transform: rotate(0deg);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.4s ease-in-out;
     }
-
     .collapse-content {
-      overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
       max-height: 0;
+      transition: max-height 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+      transform: translateY(-100%);
     }
   }
 
@@ -44,35 +38,39 @@
     padding: 0.5rem 1rem;
     width: 100%;
     height: 52px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     .arrow-icon {
       font-size: 1.2rem;
       color: #fff;
       transform-origin: center;
     }
-
     .button-text {
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
       line-height: 142.6%;
       color: #fff;
-      
     }
   }
 
   .collapse-content {
-    padding: 1rem;
     color: #ff6060;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 142.6%;
-    p{
-        padding: 0;
-        margin: 0;
-      }
+    background-color: #f6f6f6;
+    border-radius: 0px 0px 10px 10px;
+    p {
+      padding: 1.5rem 1rem 1rem 1rem;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 1.5rem 1rem 1rem 1rem;
+      margin: 0;
+    }
   }
 }

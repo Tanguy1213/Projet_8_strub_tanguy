@@ -3,15 +3,17 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import ImgBanner2 from "../../assets/images/img-banner-2.jpg";
 import Collapse from "../../components/Collapse/Collapse";
-import "./about.scss";
 import Banner from "../../components/Banner/Banner";
+import "./about.scss";
 
 function About() {
   return (
     <div>
       <Header />
       <main>
-        <Banner imgSrc={ImgBanner2} textEnable={false} />
+        <section className="section-banner">
+          <Banner imgSrc={ImgBanner2} textEnable={false} />
+        </section>
         <section className="collapse-list">
           <Collapse buttonText="Fiabilité">
             <p>

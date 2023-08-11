@@ -1,16 +1,13 @@
-import React from 'react';
-import Logo from '../../assets/Logo.svg';
-import { NavLink } from 'react-router-dom';
-import './header.scss';
-
+import React from "react";
+import Logo from "../../assets/Logo.svg";
+import { NavLink } from "react-router-dom";
+import "./header.scss";
 
 function Header() {
   return (
     <header>
-      
-        <img className='logo-style' src={Logo} alt=''></img>
-      
-      <nav className='navigation'>
+      <NavLink to="/"><img className="logo-style" src={Logo} alt=""></img></NavLink>
+      <nav className="navigation">
         <ul>
           <li>
             <NavLink to="/">Accueil</NavLink>
@@ -21,7 +18,7 @@ function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

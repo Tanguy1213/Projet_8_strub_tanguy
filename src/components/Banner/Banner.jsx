@@ -1,6 +1,7 @@
 import React from 'react'
 import './banner.scss'
 
+
 function Banner({imgSrc, textEnable}) {
   return (
     <div>
