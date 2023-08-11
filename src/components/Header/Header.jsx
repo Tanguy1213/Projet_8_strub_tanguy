@@ -6,7 +6,9 @@ import "./header.scss";
 function Header() {
   return (
     <header>
-      <NavLink to="/"><img className="logo-style" src={Logo} alt=""></img></NavLink>
+      <NavLink to="/">
+        <img className="logo-style" src={Logo} alt=""></img>
+      </NavLink>
       <nav className="navigation">
         <ul>
           <li>

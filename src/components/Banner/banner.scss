@@ -32,22 +32,21 @@
 }
 
 @media screen and (max-width: 768px) {
-    .banner-box {
-      height: auto;
+  .banner-box {
+    height: auto;
+    justify-content: left;
+    padding-bottom: 27px;
+    img {
+      height: 111px;
+    }
+    .banner-title {
+      width: 200px;
+      height: 111px;
+      font-size: 24px;
+      margin-left: 20px;
       justify-content: left;
-      padding-bottom: 27px;
-      img {
-        height: 111px;
-      }
-      .banner-title {
-        width: 200px;
-        height: 111px;
-        font-size: 24px;
-        margin-left: 20px;
-        justify-content: left;
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
-
+}
