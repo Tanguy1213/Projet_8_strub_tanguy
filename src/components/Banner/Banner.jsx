@@ -11,5 +11,5 @@ function Banner({imgSrc, textEnable}) {
     </div>
   )
 }
-
+//PROP TYPE A FAIRE 
 export default Banner

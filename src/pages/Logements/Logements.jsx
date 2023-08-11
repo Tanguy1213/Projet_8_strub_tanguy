@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/Collapse'
 import data from '../../datas/logements.json'
 import '../Logements/logements.scss'
@@ -8,10 +8,13 @@ import Footer from '../../components/Footer/Footer'
 import Slider from '../../components/Slider/Slider'
 import StarRating from '../../components/StarRating/StarRating';
 
+
 function Logements() {
   const { id } = useParams();
   const selectedLogement = data.find(logement => logement.id === id);
-
+  if(!selectedLogement){
+    return <Navigate replace to='404'></Navigate>
+  }
   return (
     <div>
       <Header />
