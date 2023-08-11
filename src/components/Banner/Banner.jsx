@@ -1,5 +1,6 @@
 import React from "react";
 import "./banner.scss";
+import PropType from 'prop-types';
 
 function Banner({ imgSrc, textEnable }) {
   return (
@@ -12,6 +13,11 @@ function Banner({ imgSrc, textEnable }) {
       </section>
     </div>
   );
+  
 }
-//PROP TYPE A FAIRE
+Banner.propTypes = {
+  imgSrc: PropType.string.isRequired,
+  textEnable: PropType.bool.isRequired,
+};
+
 export default Banner;
