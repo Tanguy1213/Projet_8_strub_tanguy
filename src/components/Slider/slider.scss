@@ -2,20 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Ajoutez cette ligne */
+  position: relative;
 }
 
 .image-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 415px; /* Ajustez la hauteur selon vos besoins */
+  height: 415px;
+  border-radius: 25px;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajuste la taille de l'image sans la déformer */
+  object-fit: cover;
   opacity: 0;
 }
 
@@ -52,4 +53,25 @@
   position: absolute;
   bottom: 10px;
   left: 49%;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .arrow-button {
+    top: 45%;
+  }
+  .prev img,
+  .next img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .indicator {
+    display: none;
+  }
 }

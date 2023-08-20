@@ -61,8 +61,58 @@
   .tag-bubble {
     background-color: #ff6060;
     color: white;
-    padding: 5px 10px;
+    padding: 5px 2px;
     border-radius: 10px;
     font-size: 14px;
+    min-width: 115px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .collapse-container {
+      width: 100%;
+    }
+  }
+
+  .section-container {
+    flex-direction: column;
+    row-gap: 25px;
+    .right-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .host {
+        .host-img {
+          width: 32px;
+          height: 32px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+    .left-container {
+      width: 100%;
+      p {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+  .tags-container {
+    .tag-bubble {
+      font-size: 10px;
+      min-width: 84px;
+      border-radius: 5px;
+    }
   }
 }

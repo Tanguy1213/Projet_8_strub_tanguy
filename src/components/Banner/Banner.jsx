@@ -1,6 +1,6 @@
 import React from "react";
 import "./banner.scss";
-import PropType from 'prop-types';
+import PropType from "prop-types";
 
 function Banner({ imgSrc, textEnable }) {
   return (
@@ -13,7 +13,6 @@ function Banner({ imgSrc, textEnable }) {
       </section>
     </div>
   );
-  
 }
 Banner.propTypes = {
   imgSrc: PropType.string.isRequired,
